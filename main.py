@@ -1236,7 +1236,7 @@ class HospitalEmailFinderQt(QMainWindow):
         filename, _ = QFileDialog.getSaveFileName(
             self, 
             "Сохранить как Excel",
-            f"hospitals_{self.city_input.text()}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.xlsx",
+            f"{self.city_input.text()}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.xlsx",
             "Excel Files (*.xlsx)"
         )
         if filename:
@@ -1265,7 +1265,7 @@ class HospitalEmailFinderQt(QMainWindow):
         filename, _ = QFileDialog.getSaveFileName(
             self,
             "Сохранить как CSV",
-            f"hospitals_{self.city_input.text()}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
+            f"{self.city_input.text()}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
             "CSV Files (*.csv)"
         )
         if filename:
@@ -1297,4 +1297,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
